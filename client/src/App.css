@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f13;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #a78bfa;
+}
+
+.game-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background: #1a1a24;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.game-form input,
+.game-form select {
+  flex: 1 1 200px;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #2e2e3e;
+  background: #0f0f13;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.game-form button {
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  background: #a78bfa;
+  color: #0f0f13;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.game-form button:hover {
+  background: #7c3aed;
+  color: white;
+}
+
+.game-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.game-card {
+  background: #1a1a24;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #a78bfa;
+}
+
+.game-card.playing { border-left-color: #34d399; }
+.game-card.completed { border-left-color: #60a5fa; }
+.game-card.dropped { border-left-color: #f87171; }
+.game-card.want-to-play { border-left-color: #a78bfa; }
+
+.game-info h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.game-info p {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin: 0.1rem 0;
+}
+
+.game-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.game-actions button {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #2e2e3e;
+  color: #e0e0e0;
+}
+
+.game-actions button.delete {
+  background: #f87171;
+  color: #0f0f13;
+}
+
+.empty {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 2rem;
+}
