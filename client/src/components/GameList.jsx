@@ -1,6 +1,6 @@
 function GameList({ games, onDelete, onEdit }) {
   if (games.length === 0) {
-    return <p className="empty">No games yet. Add one above!</p>
+    return <p className="empty">🎮 No games yet. Start building your backlog!</p>
   }
 
   return (
