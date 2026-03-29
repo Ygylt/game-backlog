@@ -4,7 +4,7 @@ import GameList from './components/GameList'
 import GameForm from './components/GameForm'
 import './App.css'
 
-const API = 'http://localhost:8000/api/games'
+const API = 'https://game-backlog-1.onrender.com/api/games'
 
 function App() {
   const [games, setGames] = useState([])
